@@ -21,17 +21,20 @@ int main(){
     double B2 = B * B;
     double C2 = C * C;
 
-    if(A >= B + C){
+    if(A >= B + C)
         cout << "NAO FORMA TRIANGULO" << endl;
-    }
-    else if(A2 == B2 + C2 || B2 == A2 + C2 || C2 == A2 + B2){
+    else if(A2 == B2 + C2 || B2 == A2 + C2 || C2 == A2 + B2)
         cout << "TRIANGULO RETANGULO" << endl;
-    }
-    else if(A2 > B2 + C2){
+    else if(A2 > B2 + C2)
         cout << "TRIANGULO OBTUSANGULO" <<endl;
-    }else if(A2 < B2 + C2){
+    else if(A2 < B2 + C2)
         cout << "TRIANGULO ACUTANGULO" << endl;
-    }
+    if(A == B && B == C)
+        cout << "TRIANGULO EQUILATERO" << endl;
+    if((A == B && A != C)  || (A == C && A != B) || (B == C && B != A))
+        cout << "TRIANGULO ISOSCELES" << endl;
+    
+    return 0;  
 
 }
 
@@ -42,4 +45,4 @@ int main(){
 
 
 
-}
+
